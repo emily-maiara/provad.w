@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", inicial-scale=1>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <title>Página Bootstrap</title>
+        <label>
+        Qual seu nome?
+        </label>
+        <label>
+        Qual seu estilo musical preferido?
+        </label>
+        <input type="text" name="nome" id="nome">
+        <input type="text" name="music" id="music">
+        <input type="button" onclick="boasvindas();">
+        
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1>O QUE EU MAIS GOSTO DE FAZER?</h1>
+            <p>ATIVIDADES FAVORITAS</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>Assistir series e filmes</h2>
+                    <p>Gosto de assisstir séries e filmes com a minha namorada, costumamos assistir series juntas todos os domingos.</p>
+                    <img src="https://scontent.fldb2-1.fna.fbcdn.net/v/t1.6435-9/135884776_2828441240758414_9129228532902639862_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_eui2=AeFG9-uLFpyLaDmodwobPepfO2xSreE6f4s7bFKt4Tp_i5DOICZ9l1y5K5XLOFjTqcobAhMcwcNTCuv2YdqYdXEW&_nc_ohc=fcPSntLa8AkAX8ZvW74&_nc_ht=scontent.fldb2-1.fna&oh=bb0d9995b44777d3dd95e8709c3e55e4&oe=60DAB155" width=250; height=250;>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Ouvir músicas</h2>
+                    <p>Eu gosto de ouvir músicas no meu tempo livre e até mesmo qaundo estou fazendo mais coisas.
+                     Gosto de MPB, rock, POP, indie. São meu estilos preferidos.
+                     <img src="https://image.freepik.com/fotos-gratis/mulher-com-cabelo-curto-em-um-espaco-isolado-ouvindo-musica-com-um-celular-e-cantando_1368-136183.jpg" width=250; height=250;>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>JOGAR</h2>
+                    <p>Apesar de fazer muito tempo que não jogo, por conta da pandemia, eu amo jogar futebol. É meu esporte favorito!</p>
+                    <img src="https://static-img.zz.pt/history/imgS620I11894T20200219162722.jpg" width=250; height=270;>
+                </div>
+
+                <style>
+                    .col-sm-4{
+                        border-style:double;
+                        border-color: rgb(155, 192, 248);
+                    }
+                    </style>
+            </div> 
+            </div>
+        </div>
+    <script>
+        function boasvindas() {
+        var nome = document.getElementById('nome').value;
+        var music = document.getElementById('music').value;
+        var msg= 'Seja Bem Vindo(a): ' + nome + "Seu estilo musical preferido é:" + music + '!';
+        alert(msg);
+    }
+    </script>
+    </body>
+    
+</html>
